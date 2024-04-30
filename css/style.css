@@ -1,0 +1,106 @@
+body {
+	 background-image: url(https://png.pngtree.com/png-clipart/20230826/original/pngtree-empty-field-yard-outside-rural-vector-png-image_10683822.png) ;
+	 background-repeat: no-repeat;
+	 background-size: cover;
+}
+
+
+.tree, .formula, .sun {
+    display: inline-block;
+}
+
+.sun{
+    height: 250px;
+    width: 250px;
+    animation: sun 7s linear infinite;
+}
+
+.tree{
+    animation: tree 5s linear infinite;
+    margin-left: 960px;
+    margin-top: 110px;
+    display: inline-block;
+    position: fixed;
+    z-index: 1;
+}
+
+.apple{
+    margin-left: 1170px;
+    margin-top: 160px;
+    width: 35px;
+    height: 35px;
+    position: fixed;
+    animation: apple 5s ease-in infinite;
+    display: inline-block;
+    z-index: 2;
+}
+
+@keyframes apple{
+    from{margin-top: 160px;}
+    to{margin-top: 390px;}
+}
+
+
+.formula{
+    margin-top: 390px;
+    margin-left: 930px;
+    width: 150px;
+    height: 100px;
+    display: inline-block;
+    position: fixed;
+    z-index: 3;
+    animation: formula 2s ease-in infinite;
+}
+
+@keyframes formula{
+    from {
+        transform: rotate(0deg);
+    }
+      to {
+        transform: rotate(359deg);
+    }
+}
+
+.formula1{
+    margin-top: 450px;
+    margin-left: 840px;
+    width: 150px;
+    height: 100px;
+    display: inline-block;
+    position: fixed;
+    z-index: 4;
+    transition: all 2s ease-in 0.2s;
+    opacity: 0;
+}
+
+.formula1:hover{
+    cursor: pointer;
+    transform:translate(-50%, -50%) rotate(900deg);
+    opacity: 1;
+}
+
+
+.bird{
+    margin-top: 150px;
+    margin-left: 100px;
+    width: 350px;
+    height: 300px;
+    display: inline-block;
+    position: fixed;
+    z-index: 5;
+    animation: bird 16s linear infinite;z
+}
+
+@keyframes bird {
+    from{
+        margin-top: 150px;
+        margin-left: -610px;
+    }
+    to{
+        margin-top: 0px;
+        margin-left: 1700px ;
+    }
+}
+
+
+
